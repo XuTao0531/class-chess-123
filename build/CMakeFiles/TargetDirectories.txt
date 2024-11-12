@@ -1,0 +1,5 @@
+C:/CMPM123/class-chess-123-main/build/CMakeFiles/tictactoe.dir
+C:/CMPM123/class-chess-123-main/build/CMakeFiles/package.dir
+C:/CMPM123/class-chess-123-main/build/CMakeFiles/package_source.dir
+C:/CMPM123/class-chess-123-main/build/CMakeFiles/edit_cache.dir
+C:/CMPM123/class-chess-123-main/build/CMakeFiles/rebuild_cache.dir
