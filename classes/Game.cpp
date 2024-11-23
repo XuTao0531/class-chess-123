@@ -3,6 +3,9 @@
 #include "BitHolder.h"
 #include "Turn.h"
 #include "../Application.h"
+#include <cmath>
+#include <windows.h>
+#include <GL/gl.h>
 
 Game::Game()
 {
@@ -115,10 +118,33 @@ void Game::scanForMouse()
 #if defined(UCI_INTERFACE)
 	return;
 #endif
-	ImVec2 mousePos = ImGui::GetMousePos();
-	mousePos.x -= ImGui::GetWindowPos().x;
-	mousePos.y -= ImGui::GetWindowPos().y;
 
+	// 获取原始鼠标位置（相对于屏幕）
+	ImVec2 mousePos = ImGui::GetMousePos();
+
+	// 获取窗口位置
+	ImVec2 windowPos = ImGui::GetWindowPos();
+
+	// 计算相对于窗口的鼠标位置
+	mousePos.x -= windowPos.x;
+	mousePos.y -= windowPos.y;
+
+	// 检查是否点击了重置按钮
+	ImVec2 buttonPos(10, 10);
+	ImVec2 buttonSize(100, 30);
+	bool mouseOverButton =
+			mousePos.x >= buttonPos.x &&
+			mousePos.x <= (buttonPos.x + buttonSize.x) &&
+			mousePos.y >= buttonPos.y &&
+			mousePos.y <= (buttonPos.y + buttonSize.y);
+
+	// 如果鼠标在按钮上，不处理棋子的移动
+	if (mouseOverButton)
+	{
+		return;
+	}
+
+	// 处理棋盘上的鼠标事件
 	Entity *entity = nullptr;
 	for (int y = 0; y < _gameOptions.rowY; y++)
 	{
@@ -132,7 +158,8 @@ void Game::scanForMouse()
 				if (ImGui::IsMouseClicked(0) && entity)
 				{
 					mouseDown(mousePos, entity);
-				} else if (ImGui::IsMouseReleased(0))
+				}
+				else if (ImGui::IsMouseReleased(0))
 				{
 					mouseUp(mousePos, entity);
 				}
@@ -184,8 +211,10 @@ void Game::findDropTarget(ImVec2 &pos)
 //
 void Game::drawFrame()
 {
+	// 确保在每一帧都检查鼠标状态
 	scanForMouse();
 
+	// 绘制棋盘格子
 	for (int y = 0; y < _gameOptions.rowY; y++)
 	{
 		for (int x = 0; x < _gameOptions.rowX; x++)
@@ -194,9 +223,8 @@ void Game::drawFrame()
 			holder.paintSprite();
 		}
 	}
-	//
-	// paint the pieces second so they are always on top of the board as we move them
-	//
+
+	// 绘制静态棋子
 	for (int y = 0; y < _gameOptions.rowY; y++)
 	{
 		for (int x = 0; x < _gameOptions.rowX; x++)
@@ -208,7 +236,8 @@ void Game::drawFrame()
 			}
 		}
 	}
-	// now paint the moving pieces
+
+	// 绘制移动中的棋子
 	for (int y = 0; y < _gameOptions.rowY; y++)
 	{
 		for (int x = 0; x < _gameOptions.rowX; x++)
@@ -221,19 +250,11 @@ void Game::drawFrame()
 			}
 		}
 	}
-	//
-	// now paint any picked up pieces
-	//
-	for (int y = 0; y < _gameOptions.rowY; y++)
+
+	// 最后绘制被拾起的棋子（确保在最上层）
+	if (_dragBit && _dragBit->getPickedUp())
 	{
-		for (int x = 0; x < _gameOptions.rowX; x++)
-		{
-			BitHolder &holder = getHolderAt(x, y);
-			if (holder.bit() && holder.bit()->getPickedUp())
-			{
-				holder.bit()->paintSprite();
-			}
-		}
+		_dragBit->paintSprite();
 	}
 }
 
@@ -339,18 +360,17 @@ void Game::mouseMoved(ImVec2 &location, Entity *entity)
 {
 	if (_dragBit)
 	{
-		// Get the mouse position, and see if we've moved 3 pixels since the mouseDown:
 		ImVec2 pos = location;
-		if (fabs(pos.x - _dragStartPos.x) >= 12 || fabs(pos.y - _dragStartPos.y) >= 12)
+		if (std::fabs(pos.x - _dragStartPos.x) >= 3 || std::fabs(pos.y - _dragStartPos.y) >= 3)
+		{
 			_dragMoved = true;
+		}
 
-		// Move the _dragBit (without animation -- it's unnecessary and slows down responsiveness):
 		pos.x += _dragOffset.x;
 		pos.y += _dragOffset.y;
-
 		_dragBit->setCenterPosition(pos);
+		_dragBit->setPickedUp(true);
 
-		// Find what it's over:
 		findDropTarget(pos);
 	}
 }

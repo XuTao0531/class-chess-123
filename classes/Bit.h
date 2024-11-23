@@ -31,7 +31,7 @@ public:
 		_moving = false;
 	};
 
-	~Bit();
+	virtual ~Bit() = default;
 
 	// helper functions
 	bool getPickedUp();
@@ -46,17 +46,13 @@ public:
 	bool friendly();
 	bool unfriendly();
 	// game defined game tags
-	const int gameTag() { return _gameTag; };
-	void setGameTag(int tag) { _gameTag = tag; };
+	int gameTag() const { return _gameTag; }
+	void setGameTag(int tag) { _gameTag = tag; }
 	// move to a position
 	void moveTo(const ImVec2 &point);
 	void update();
-	void setOpacity(float opacity){};
+	void setOpacity(float opacity) {};
 	bool getMoving() { return _moving; };
-
-	// 新增的过路兵相关函数
-    bool isEligibleForEnPassant() const { return _eligibleForEnPassant; }
-    void setEligibleForEnPassant(bool eligible) { _eligibleForEnPassant = eligible; }
 
 private:
 	int _restingZ;
@@ -67,7 +63,4 @@ private:
 	ImVec2 _destinationPosition;
 	ImVec2 _destinationStep;
 	bool _moving;
-
-	// 新增的成员变量，表示是否可以被过路兵吃掉
-    bool _eligibleForEnPassant;
 };

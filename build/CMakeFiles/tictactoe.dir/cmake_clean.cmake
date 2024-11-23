@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tictactoe.dir/Application.cpp.obj"
+  "CMakeFiles/tictactoe.dir/Application.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/classes/Bit.cpp.obj"
+  "CMakeFiles/tictactoe.dir/classes/Bit.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/classes/BitHolder.cpp.obj"
+  "CMakeFiles/tictactoe.dir/classes/BitHolder.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/classes/Chess.cpp.obj"
+  "CMakeFiles/tictactoe.dir/classes/Chess.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/classes/ChessSquare.cpp.obj"
+  "CMakeFiles/tictactoe.dir/classes/ChessSquare.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/classes/Game.cpp.obj"
+  "CMakeFiles/tictactoe.dir/classes/Game.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/classes/Sprite.cpp.obj"
+  "CMakeFiles/tictactoe.dir/classes/Sprite.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/classes/Square.cpp.obj"
+  "CMakeFiles/tictactoe.dir/classes/Square.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/imgui/imgui.cpp.obj"
+  "CMakeFiles/tictactoe.dir/imgui/imgui.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_demo.cpp.obj"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_demo.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_draw.cpp.obj"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_draw.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_impl_opengl3.cpp.obj"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_impl_opengl3.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_impl_win32.cpp.obj"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_impl_win32.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_tables.cpp.obj"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_tables.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_widgets.cpp.obj"
+  "CMakeFiles/tictactoe.dir/imgui/imgui_widgets.cpp.obj.d"
+  "CMakeFiles/tictactoe.dir/main_win32.cpp.obj"
+  "CMakeFiles/tictactoe.dir/main_win32.cpp.obj.d"
+  "libtictactoe.dll.a"
+  "tictactoe.exe"
+  "tictactoe.exe.manifest"
+  "tictactoe.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/tictactoe.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
