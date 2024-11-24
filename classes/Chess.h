@@ -68,6 +68,10 @@ public:
 
     void resetGame();
 
+    // FEN字符串支持
+    void FENtoBoard(const std::string &fen);
+    std::string BoardtoFEN() const;
+
 private:
     Bit *PieceForPlayer(const int playerNumber, ChessPiece piece);
     const char bitToPieceNotation(int row, int column) const;
@@ -179,4 +183,23 @@ private:
     int evaluatePosition() const;
     void makeMove(int fromRow, int fromCol, int toRow, int toCol);
     void undoMove(int fromRow, int fromCol, int toRow, int toCol, Bit *capturedPiece);
+
+    // FEN相关的辅助函数
+    void clearBoard();
+    void placePieceFromFEN(char piece, int row, int col);
+    char getPieceFENChar(const Bit *piece) const;
+
+    // 添加兵升变状态结构体
+    struct PawnPromotionState
+    {
+        bool inProgress = false;
+        int row = -1;
+        int col = -1;
+        bool isBlack = false;
+    } _promotionState;
+
+    // 添加兵升变相关函数
+    void checkPawnPromotion(int row, int col);
+    void showPromotionDialog();
+    void promotePawnTo(int row, int col, PieceType type);
 };
