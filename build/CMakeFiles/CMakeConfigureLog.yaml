@@ -661,7 +661,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
       The C compiler identification is Clang, found in:
-        C:/CMPM123/1/build/CMakeFiles/3.29.5-msvc4/CompilerIdC/a.exe
+        C:/CMPM123/2/build/CMakeFiles/3.29.5-msvc4/CompilerIdC/a.exe
       
   -
     kind: "message-v1"
@@ -703,7 +703,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is Clang, found in:
-        C:/CMPM123/1/build/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/a.exe
+        C:/CMPM123/2/build/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/a.exe
       
   -
     kind: "message-v1"
@@ -734,8 +734,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-o62xb8"
-      binary: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-o62xb8"
+      source: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-lovgku"
+      binary: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-lovgku"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/Llvm/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -744,16 +744,16 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-o62xb8'
+        Change Dir: 'C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-lovgku'
         
-        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_673a6
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_673a6.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_673a6.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_673a6.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_673a6.dir/CMakeCCompilerABI.c.obj -o cmTC_673a6.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_673a6.lib -Xlinker /pdb:cmTC_673a6.pdb -Xlinker /version:0.0     && cd ."
+        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_360d5
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_360d5.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_360d5.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_360d5.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_360d5.dir/CMakeCCompilerABI.c.obj -o cmTC_360d5.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_360d5.lib -Xlinker /pdb:cmTC_360d5.pdb -Xlinker /version:0.0     && cd ."
         clang version 17.0.3
         Target: i686-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\x0d
-         "C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\bin\\\\lld-link" -out:cmTC_673a6.exe "-libpath:C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\lib\\\\clang\\\\17\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_673a6.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_673a6.lib /pdb:cmTC_673a6.pdb /version:0.0\x0d
+         "C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\bin\\\\lld-link" -out:cmTC_360d5.exe "-libpath:C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\lib\\\\clang\\\\17\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_360d5.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_360d5.lib /pdb:cmTC_360d5.pdb /version:0.0\x0d
         
       exitCode: 0
   -
@@ -814,8 +814,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-zfaroq"
-      binary: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-zfaroq"
+      source: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-5pfxzy"
+      binary: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-5pfxzy"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/Llvm/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -825,16 +825,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-zfaroq'
+        Change Dir: 'C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-5pfxzy'
         
-        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_d91e1
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_d91e1.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_d91e1.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_d91e1.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_d91e1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_d91e1.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_d91e1.lib -Xlinker /pdb:cmTC_d91e1.pdb -Xlinker /version:0.0     && cd ."
+        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_e7a93
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_e7a93.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_e7a93.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_e7a93.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_e7a93.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_e7a93.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_e7a93.lib -Xlinker /pdb:cmTC_e7a93.pdb -Xlinker /version:0.0     && cd ."
         clang version 17.0.3
         Target: i686-pc-windows-msvc
         Thread model: posix\x0d
         InstalledDir: C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\x0d
-         "C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\bin\\\\lld-link" -out:cmTC_d91e1.exe "-libpath:C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\lib\\\\clang\\\\17\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_d91e1.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_d91e1.lib /pdb:cmTC_d91e1.pdb /version:0.0\x0d
+         "C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\bin\\\\lld-link" -out:cmTC_e7a93.exe "-libpath:C:\\\\PROGRA~2\\\\MICROS~2\\\\2022\\\\BUILDT~1\\\\VC\\\\Tools\\\\Llvm\\\\lib\\\\clang\\\\17\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_e7a93.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_e7a93.lib /pdb:cmTC_e7a93.pdb /version:0.0\x0d
         
       exitCode: 0
   -
@@ -898,8 +898,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-54ocg5"
-      binary: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-54ocg5"
+      source: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-3jv6i0"
+      binary: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-3jv6i0"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/Llvm/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -908,11 +908,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-54ocg5'
+        Change Dir: 'C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-3jv6i0'
         
-        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_b537c
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_b537c.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_b537c.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_b537c.dir/feature_tests.cxx.obj -c C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-54ocg5/feature_tests.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_b537c.dir/feature_tests.cxx.obj -o cmTC_b537c.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_b537c.lib -Xlinker /pdb:cmTC_b537c.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_55ca4
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_55ca4.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_55ca4.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_55ca4.dir/feature_tests.cxx.obj -c C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-3jv6i0/feature_tests.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_55ca4.dir/feature_tests.cxx.obj -o cmTC_55ca4.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_55ca4.lib -Xlinker /pdb:cmTC_55ca4.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
   -
@@ -927,8 +927,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-1tewpv"
-      binary: "C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-1tewpv"
+      source: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-xuslvd"
+      binary: "C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-xuslvd"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/Llvm/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -937,11 +937,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-1tewpv'
+        Change Dir: 'C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-xuslvd'
         
-        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_d877e
-        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_d877e.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_d877e.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_d877e.dir/feature_tests.cxx.obj -c C:/CMPM123/1/build/CMakeFiles/CMakeScratch/TryCompile-1tewpv/feature_tests.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_d877e.dir/feature_tests.cxx.obj -o cmTC_d877e.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_d877e.lib -Xlinker /pdb:cmTC_d877e.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/PROGRA~2/MICROS~2/2022/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_73c8f
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_73c8f.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_73c8f.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_73c8f.dir/feature_tests.cxx.obj -c C:/CMPM123/2/build/CMakeFiles/CMakeScratch/TryCompile-xuslvd/feature_tests.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\Llvm\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_73c8f.dir/feature_tests.cxx.obj -o cmTC_73c8f.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_73c8f.lib -Xlinker /pdb:cmTC_73c8f.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
 ...
